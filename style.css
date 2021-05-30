@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }   
+
 /* Style do Navbar*/
 .h5-navbar {
     margin-right: 5px; 
@@ -18,4 +19,11 @@
 .carousel-item {
     text-shadow: 1px 1px rgb(0, 0, 0);
     
+}
+
+/*Nossa Historia*/
+
+.img-his {
+    background-image: url('img/foto-img-historia.jpg');
+    margin-top: 12px;
 }
