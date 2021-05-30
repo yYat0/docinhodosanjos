@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Luis R. - https://github.com/yYat0" >
-    <meta name="description" content="Website for Candy Seller">
+    <meta name="description" content="Website for Candy Seller EN-US / Site de Doces PT-BR">
     <title>Docinhos dos Anjos</title>
     <!-- Style / Favicon Link -->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <!--Js-->
     <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -17,23 +21,23 @@
 </head>
 <body>
     <!--Navbar / Menu do Site-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-warning ">
         <div class="container-fluid">
               <img src="img/Navbar Logo.png" alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
-              <h5 class="h5-navbar">Docinho dos Anjos</h5> 
+              <h5 class="h5-navbar">Docinhos dos Anjos</h5> 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse justify-content-center " id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Nossa Historia</a>
+                <a class="nav-link active"  aria-current="page" href="#NossaHistoria">Nossa Historia</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Produtos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Catalogo</a>
+                <a class="nav-link" href="#">Catálogo</a>
               </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contato</a>
@@ -42,5 +46,79 @@
           </div>
         </div>
       </nav>
+    <!--Carrousel-->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.pexels.com/photos/635409/pexels-photo-635409.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    class="d-block w-100" alt="Brigadeiro exposto">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Qualidade</h5>
+                    <p>Com os melhores ingredientes do mercado, damos ao nossos clientes doces que são de dar água na boca.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/3740197/pexels-photo-3740197.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    class="d-block w-100" alt="Pedaço de bolo de chocolate com colher ao lado.">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Variedade</h5>
+                    <p>Fazemos qualquer tipo de doces.
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2016/02/16/14/46/brigadier-1203395_960_720.jpg"
+                    class="d-block w-100" alt="Brigadeiros envolvidos com plástico.">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Vamos Pedir?</h5>
+                    <p>Consulte nossas redes, e entre em contato para pedir agora mesmo o seu!</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
+
+      <!--Nossa Historia-->
+      <div class="container mt-5 mb-5" id="nos">
+        <div class="card mb-3">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="img-fluid"
+                        src="img/Navbar Logo.png"
+                        alt="ADICIONAR DESCRIÇÃO">
+                </div>
+                <div class="col-sm-8" id="NossaHistoria">
+                    <div class="card-body">
+                        <h5 class="card-title">Nossa Hístoria</h5>
+                        <p class="card-text">
+                            > Historia DELA
+                        </p>
+                        <p>Fazemos todos os tipos de docinhos caseiros por encomenda.</p>
+                        <p class="card-text"><small class="text-muted">Atualizado pela Equipe Docinhos dos Anjos em 30 de maio de 2021.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

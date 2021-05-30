@@ -1,10 +1,20 @@
 * {
     padding: 0;
     margin: 0;
-}
+    font-family: 'Roboto', sans-serif;
+}   
 /* Style do Navbar*/
 .h5-navbar {
     margin-right: 5px; 
     margin-top: 5px; 
     color:white;
+    text-shadow: 1px 1px black;
+}
+.nav-link {
+    text-shadow: 1px 1px white;
+}
+/* Carrousel */
+
+.carousel-item {
+    text-shadow: 2px 2px black;
 }
