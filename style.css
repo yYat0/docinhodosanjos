@@ -26,4 +26,14 @@
 .img-his {
     background-image: url('img/foto-img-historia.jpg');
     margin-top: 12px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+p b {
+    text-shadow: 1px 1px #ffc107;
+}
+
+.cardhis {
+    border: 1px solid #ffc107;
 }
