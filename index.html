@@ -6,26 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Luis R. - https://github.com/yYat0" >
     <meta name="description" content="Website for Candy Seller EN-US / Site de Doces PT-BR">
-    <title>Docinhos dos Anjos</title>
+        <title>Docinhos dos Anjos</title>
     <!-- Style / Favicon Link -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+         <link rel="stylesheet" href="style.css">
+         <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
     <!--Js-->
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+        <script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+        <script src="script.js"></script>
     <!-- Bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <!--Links Galeria-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+
+
+
 </head>
 <body>
-    <!--Navbar / Menu do Site-->
-    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-warning ">
+
+
+                                     <!--Navbar / Menu do Site-->
+
+
+    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-light bg-warning " id="navbar">
         <div class="container-fluid">
-              <img src="img/Logo HD.png"  alt="Logo" width="40" height="34" class="d-inline-block align-text-top">
-              <h5 class="h5-navbar">Docinhos dos Anjos</h5> 
+              <img src="img/Logo HD.png"  alt="Logo" width="40" height="34" class="d-inline-block align-text-top Logo-Docinho">
+              <h5 class="h5-navbar" id="logo">Docinhos dos Anjos</h5> 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -35,7 +47,7 @@
                 <a class="nav-link active"  aria-current="page" href="#NossaHistoria">Nossa Historia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Produtos</a>
+                <a class="nav-link" href="#Produtos">Produtos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Catálogo</a>
@@ -53,7 +65,8 @@
           </div>
         </div>
       </nav>
-    <!--Carrousel-->
+
+                           <!--Carrousel-->
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -100,13 +113,14 @@
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
+            <span class="visually-hidden" id="NossaHistoria">Próximo</span>
         </button>
     </div>
 
 
-      <!--Nossa Historia-->
-      <div class="container mt-5 mb-5 bg-warning" id="nos">
+                     <!--Nossa Historia-->
+
+      <div class="container mt-5 mb-5 bg-warning">
         <div class="card mb-3">
             <div class="row">
                 <div class="col-sm-4">
@@ -114,22 +128,87 @@
                         src="img/Logo HD.png"
                         alt="ADICIONAR DESCRIÇÃO">
                 </div>
-                <div class="col-sm-8  cardhis " id="NossaHistoria">
+                <div class="col-sm-8  cardhis ">
                     <div class="card-body ">
-                        <h5 class="card-title" style="text-shadow: 1px 1px #ffc107;">Nossa Hístoria</h5>
+                        <h5 class="card-title bor" style="text-shadow: 1px 1px #ffc107;">Nossa Hístoria</h5>
                         <p class="card-text" style="text-indent: 20px;">
                             Olá, aqui é a Julia, proprietária da <b>Docinhos dos Anjos</b> e hoje vim contar para vocês um pouco de mim e da história da loja. <b>A Docinhos dos Anjos</b> foi um projeto criado por mim com o intuito de levantar um dinheiro extra fazendo algo que gosto muito (doces, cozinhar e confeitar) e hoje tenho como objetivo fazer da loja a minha principal fonte de renda,
                             ainda não é possível, tenho outro emprego e esse é o motivo dos docinhos serem feitos apenas por encomenda.
                         </p>
                         <p>Levando oque é de melhor nos Doces para toda região!</p>
-                        <p class="card-text"><small class="text-muted">Atualizado pela Equipe Docinhos dos Anjos em 30 de maio de 2021.</small></p>
+                        <p class="card-text"><small class="text-muted" id="Produtos">Atualizado pela Equipe Docinhos dos Anjos em 30 de maio de 2021.</small></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!--Nossa Historia2-->
+                     <!-- Produtos -->
+
+    <div class="container gallery-container">
+
+        <h1 class="h1-photo">Galeria de Produtos</h1>
     
+        <p class="page-description text-center"></p>
+        
+        <div class="tz-gallery">
+    
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="img/img1.jpg" >
+                            <img src="img/img1.jpg" alt="Park" height="100%" width="100%">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="img/img2.jpg">
+                            <img src="img/img2.jpg" alt="Bridge" height="100%" width="100%">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="img/img3.jpg">
+                            <img src="img/img3.jpg" alt="Tuneel" height="100%" width="100%">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="img/img4.jpg">
+                            <img src="img/img4.jpg" alt="Coast" height="100%" width="100%">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="img/img5.jpg">
+                            <img src="img/img5.jpg" alt="Coast" height="100%" width="100%">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <a class="lightbox" href="img/img6.jpg">
+                            <img src="img/img6.jpg" alt="Coast" height="100%" width="100%">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+    
+        </div>
+    
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
 </body>
 </html>
